@@ -35,7 +35,7 @@ resource "aws_s3_object" "s3_object_xls" {
   bucket = aws_s3_bucket.s3_bucket.id
 
   key    = "10-MB-Test.xlsx"
-  source = "test.xlsx"
+  source = "10-MB-Test.xlsx"
 }
 resource "aws_s3_bucket_server_side_encryption_configuration" "s3_sse" {
   bucket = aws_s3_bucket.s3_bucket.bucket
